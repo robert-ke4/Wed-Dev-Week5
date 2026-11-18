@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo-tile">
+            <img src="Spendwise_Logo.png" alt="SpendWise logo" width="200" height="150">
+        </div>
+        <nav aria-label="Main">
+            <ul class="nav">
+                <li><a href="#" aria-current="page"><span class="icon" aria-hidden="true">🏠</span>Dashboard</a></li>
+                <li><a href="#"><span class="icon" aria-hidden="true">🧾</span>Expenses</a></li>
+                <li><a href="#"><span class="icon" aria-hidden="true">🗂️</span>Categories</a></li>
+                <li><a href="#"><span class="icon" aria-hidden="true">📊</span>Reports</a></li>
+                <li><a href="#"><span class="icon" aria-hidden="true">🎯</span>Savings Goals</a></li>
+                <li><a href="#"><span class="icon" aria-hidden="true">⚙️</span>Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Header -->
+    <header class="topbar">
+        <div>
+            <h1>Dashboard</h1>
+            <p>November 2026 budget overview</p>
+        </div>
+        <div class="topbar-right">
+            <button type="button" class="btn" id="run-budget">Enter Budget Data</button>
+            <div class="total">
+                <span>Spent this month</span>
+                <strong>$2,380 of $2,870</strong>
+            </div>
+            <div class="avatar" aria-label="Your account">AM</div>
+        </div>
+    </header>
+
+    <!-- Category cards -->
+    <main class="content">
+        <h2>Spending by category</h2>
+        <div class="cards">
+
+            <article class="card" tabindex="0">
+                <div class="card-top">
+                    <div class="card-icon" aria-hidden="true">🛒</div>
+                    <div><h3>Food</h3><p>Groceries and dining</p></div>
+                </div>
+                <p class="amount">$420 <small>of $600</small></p>
+                <div class="bar" role="progressbar" aria-label="Food budget used" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span style="--pct:70%"></span></div>
+                <div class="card-foot"><span>70% used</span><span>$180 left</span></div>
+            </article>
+
+            <article class="card" tabindex="0">
+                <div class="card-top">
+                    <div class="card-icon" aria-hidden="true">🚌</div>
+                    <div><h3>Transport</h3><p>Bus fare and fuel</p></div>
+                </div>
+                <p class="amount">$135 <small>of $200</small></p>
+                <div class="bar" role="progressbar" aria-label="Transport budget used" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"><span style="--pct:68%"></span></div>
+                <div class="card-foot"><span>68% used</span><span>$65 left</span></div>
+            </article>
+
+            <article class="card" tabindex="0">
+                <div class="card-top">
+                    <div class="card-icon" aria-hidden="true">🏠</div>
+                    <div><h3>Rent</h3><p>Accommodation</p></div>
+                </div>
+                <p class="amount">$1,200 <small>of $1,200</small></p>
+                <div class="bar warn" role="progressbar" aria-label="Rent budget used" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span style="--pct:100%"></span></div>
+                <div class="card-foot"><span>100% used</span><span>Paid in full</span></div>
+            </article>
+
+            <article class="card" tabindex="0">
+                <div class="card-top">
+                    <div class="card-icon" aria-hidden="true">🎬</div>
+                    <div><h3>Entertainment</h3><p>Streaming and outings</p></div>
+                </div>
+                <p class="amount">$95 <small>of $150</small></p>
+                <div class="bar" role="progressbar" aria-label="Entertainment budget used" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"><span style="--pct:63%"></span></div>
+                <div class="card-foot"><span>63% used</span><span>$55 left</span></div>
+            </article>
+
+            <article class="card" tabindex="0">
+                <div class="card-top">
+                    <div class="card-icon" aria-hidden="true">💰</div>
+                    <div><h3>Savings</h3><p>Monthly transfer</p></div>
+                </div>
+                <p class="amount">$350 <small>of $500</small></p>
+                <div class="bar" role="progressbar" aria-label="Savings goal reached" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span style="--pct:70%"></span></div>
+                <div class="card-foot"><span>70% saved</span><span>$150 to go</span></div>
+            </article>
+
+            <article class="card" tabindex="0">
+                <div class="card-top">
+                    <div class="card-icon" aria-hidden="true">💡</div>
+                    <div><h3>Utilities</h3><p>Power, water, internet</p></div>
+                </div>
+                <p class="amount">$180 <small>of $220</small></p>
+                <div class="bar warn" role="progressbar" aria-label="Utilities budget used" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"><span style="--pct:82%"></span></div>
+                <div class="card-foot"><span>82% used</span><span>$40 left</span></div>
+            </article>
+
+        </div>
+    </main>
+
+</div>
+</body>
+</html>
